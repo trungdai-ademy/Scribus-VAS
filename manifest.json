@@ -1,0 +1,30 @@
+{
+    "_note":  "Gói phần mềm VAS phát hành từ repo này — sinh tự động từ setup/tools-manifest.json của VAS (tools/vas-repos/make-repos.ps1). Không sửa tay.",
+    "packages":  [
+                     {
+                         "id":  "scribus",
+                         "vasRepo":  "Scribus-VAS",
+                         "boCai":  "thanh-phan",
+                         "title":  "Scribus (dàn trang: cẩm nang, ấn phẩm, thẻ mạng xã hội; PDF điện tử + PDF/X in ấn CMYK)",
+                         "version":  "1.6.7",
+                         "file":  "scribus-1.6.7-windows-x64.exe",
+                         "url":  "https://downloads.sourceforge.net/project/scribus/scribus/1.6.7/scribus-1.6.7-windows-x64.exe",
+                         "sha256":  "E16C0D5EFBBC03E48BBA0EF9ADD204B6A4CD65E5854BAB9574AF81A6B7026D5C",
+                         "license":  "GPL-2.0-or-later (kèm Qt5 LGPL, Python 3.8 PSF, Poppler GPL-2, hồ sơ màu ISO Coated v2 300% basICColor zlib)",
+                         "home":  "https://www.scribus.net",
+                         "sourceCode":  "https://sourceforge.net/projects/scribus/files/scribus/1.6.7/",
+                         "sources":  [
+                                         "https://downloads.sourceforge.net/project/scribus/scribus/1.6.7/scribus-1.6.7.tar.xz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/scribusproject/scribus/Version16x/COPYING",
+                                              "https://raw.githubusercontent.com/scribusproject/scribus/Version16x/resources/profiles/ISOcoated_v2_300_bas.txt"
+                                          ],
+                         "sourceGaps":  "Bản Windows kèm Qt5, Python 3.8, Poppler, LittleCMS, antiword…: mã nguồn theo bản dựng Windows của dự án Scribus.",
+                         "note":  "Nhà phát hành KHÔNG công bố SHA-256: chỉ có MD5 trên SourceForge (RSS /scribus/1.6.7: 5b1787236c1263b4a4fbd8fa7a352e5d). SHA-256 ở đây do VAS tính sau khi MD5 khớp, đối chiếu hai lần tải độc lập (11/11/2026). Bộ cài NSIS không ký số: giải nén bằng 7-Zip, KHÔNG chạy bộ cài.",
+                         "update":  {
+                                        "kind":  "fixed"
+                                    }
+                     }
+                 ]
+}

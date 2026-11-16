@@ -1,0 +1,396 @@
+{
+ "id": "scribus",
+ "version": "1.6.7",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "Scribus",
+   "version": "1.6.7",
+   "license": "GPL-2.0-or-later (bundled fonts/dicts/profiles under their own licenses)",
+   "url": "https://downloads.sourceforge.net/project/scribus/scribus/1.6.7/scribus-1.6.7.tar.xz",
+   "bytes": 74690884,
+   "evidence": "Scribus.exe FileVersion 1.6.7; release commit aa658d92 \"msvc projects: bump version to 1.6.7\" (2026-10-26) on Version16x [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Qt qtbase",
+   "version": "5.15.19",
+   "license": "LGPL-3.0-only",
+   "url": "https://download.qt.io/archive/qt/5.15/5.15.19/submodules/qtbase-everywhere-opensource-src-5.15.19.tar.xz",
+   "bytes": 51588440,
+   "evidence": "Qt5*.dll FileVersion 5.15.19.0; Scribus-build-props.props@aa658d92 QT5_DIR F:\\Libraries\\Qt-5.15.19\\msvc2019_64 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Qt qtsvg",
+   "version": "5.15.19",
+   "license": "LGPL-3.0-only",
+   "url": "https://download.qt.io/archive/qt/5.15/5.15.19/submodules/qtsvg-everywhere-opensource-src-5.15.19.tar.xz",
+   "bytes": 1867700,
+   "evidence": "Qt5Svg.dll, qsvg, qsvgicon FileVersion 5.15.19.0 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Qt qtimageformats",
+   "version": "5.15.19",
+   "license": "LGPL-3.0-only",
+   "url": "https://download.qt.io/archive/qt/5.15/5.15.19/submodules/qtimageformats-everywhere-opensource-src-5.15.19.tar.xz",
+   "bytes": 1910968,
+   "evidence": "qicns/qtga/qtiff/qwbmp/qwebp FileVersion 5.15.19.0 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Qt qttranslations",
+   "version": "5.15.19",
+   "license": "LGPL-3.0-only",
+   "url": "https://download.qt.io/archive/qt/5.15/5.15.19/submodules/qttranslations-everywhere-opensource-src-5.15.19.tar.xz",
+   "bytes": 1612928,
+   "evidence": "Qt .qm translations shipped with Scribus translations (probable source) [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Boost (headers)",
+   "version": "1.75.0",
+   "license": "BSL-1.0",
+   "url": "https://archives.boost.io/release/1.75.0/source/boost_1_75_0.tar.bz2",
+   "bytes": 121849575,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir boost-1.75.0): listed in kit 7z header [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "cairo",
+   "version": "1.18.6",
+   "license": "LGPL-2.1-only OR MPL-1.1",
+   "url": "https://cairographics.org/releases/cairo-1.18.6.tar.xz",
+   "bytes": 32725456,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir cairo-1.18.6): listed in kit 7z header; string 1.18.6 in cairo2.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "pixman",
+   "version": "0.46.4",
+   "license": "MIT",
+   "url": "https://cairographics.org/releases/pixman-0.46.4.tar.gz",
+   "bytes": 827198,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir pixman-0.46.4): listed in kit 7z header; static in cairo2.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "FreeType",
+   "version": "2.13.2",
+   "license": "FTL or GPL-2.0",
+   "url": "https://downloads.sourceforge.net/project/freetype/freetype2/2.13.2/freetype-2.13.2.tar.xz",
+   "bytes": 2501764,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir freetype-2.13.2): listed in kit 7z header; DLL FileVersion 2.13.2 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "HarfBuzz",
+   "version": "8.3.0",
+   "license": "MIT",
+   "url": "https://github.com/harfbuzz/harfbuzz/releases/download/8.3.0/harfbuzz-8.3.0.tar.xz",
+   "bytes": 19002808,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir harfbuzz-8.3.0): listed in kit 7z header; string 8.3.0 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Hunspell",
+   "version": "1.7.6",
+   "license": "MPL-1.1 / GPL-2.0+ / LGPL-2.1+",
+   "url": "https://github.com/hunspell/hunspell/releases/download/v1.7.6/hunspell-1.7.6.tar.gz",
+   "bytes": 1167432,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir hunspell-1.7.6): listed in kit 7z header; static in hunspellplugin.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "ICU",
+   "version": "74.1",
+   "license": "Unicode-3.0 (ICU)",
+   "url": "https://github.com/unicode-org/icu/releases/download/release-74-1/icu4c-74_1-src.tgz",
+   "bytes": 26625850,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir icu-74.1): listed in kit 7z header; DLL FileVersion 74,1 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Little CMS",
+   "version": "2.15",
+   "license": "MIT",
+   "url": "https://github.com/mm2/Little-CMS/releases/download/lcms2.15/lcms2-2.15.tar.gz",
+   "bytes": 7548405,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir lcms2-2.15): listed in kit 7z header; static (lcms2_static.vcxproj) in Scribus.exe [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libcdr",
+   "version": "0.1.9",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.9.tar.xz",
+   "bytes": 632896,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libcdr-0.1.9): listed in kit 7z header; static in importcdr.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libfreehand",
+   "version": "0.1.4",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libfreehand/libfreehand-0.1.4.tar.xz",
+   "bytes": 535240,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libfreehand-0.1.4): listed in kit 7z header; static in importfh.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libmspub",
+   "version": "0.1.5",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libmspub/libmspub-0.1.5.tar.xz",
+   "bytes": 393340,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libmspub-0.1.5): listed in kit 7z header; static in importpub.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libpagemaker",
+   "version": "0.0.4",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libpagemaker/libpagemaker-0.0.4.tar.xz",
+   "bytes": 306496,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libpagemaker-0.0.4): listed in kit 7z header; static in importpm.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libqxp",
+   "version": "0.0.3",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libqxp/libqxp-0.0.3.tar.xz",
+   "bytes": 356004,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libqxp-0.0.3): listed in kit 7z header; static in importqxp.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "librevenge",
+   "version": "0.0.5",
+   "license": "MPL-2.0 OR LGPL-2.1-or-later",
+   "url": "https://downloads.sourceforge.net/project/libwpd/librevenge/librevenge-0.0.5/librevenge-0.0.5.tar.xz",
+   "bytes": 437400,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir librevenge-0.0.5): listed in kit 7z header; static in import plugins [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libvisio",
+   "version": "0.1.8",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.8.tar.xz",
+   "bytes": 1686344,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libvisio-0.1.8): listed in kit 7z header; static in importvsd.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libzmf",
+   "version": "0.0.2",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libzmf/libzmf-0.0.2.tar.xz",
+   "bytes": 320952,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libzmf-0.0.2): listed in kit 7z header; static in importzmf.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "GNU libiconv",
+   "version": "1.17",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://ftp.gnu.org/gnu/libiconv/libiconv-1.17.tar.gz",
+   "bytes": 5413283,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libiconv-1.17): listed in kit 7z header; iconv.dll FileVersion 1.17 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "IJG libjpeg",
+   "version": "9e",
+   "license": "IJG",
+   "url": "https://www.ijg.org/files/jpegsrc.v9e.tar.gz",
+   "bytes": 1046935,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libjpeg-9e): listed in kit 7z header; libjpeg9e.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "XZ Utils (liblzma)",
+   "version": "5.8.4",
+   "license": "0BSD",
+   "url": "https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.gz",
+   "bytes": 2799797,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir liblzma-5.8.4): listed in kit 7z header; DLL FileVersion 5.8.4 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.59",
+   "license": "libpng-2.0",
+   "url": "https://downloads.sourceforge.net/project/libpng/libpng16/1.6.59/libpng-1.6.59.tar.xz",
+   "bytes": 1074540,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libpng-1.6.59): listed in kit 7z header; DLL FileVersion 1.6.59 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LibTIFF",
+   "version": "4.7.2",
+   "license": "libtiff",
+   "url": "https://download.osgeo.org/libtiff/tiff-4.7.2.tar.gz",
+   "bytes": 4083368,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libtiff-4.7.2): listed in kit 7z header; libtiff5.dll FileVersion 4.7.2 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libxml2",
+   "version": "2.15.4",
+   "license": "MIT",
+   "url": "https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.4.tar.xz",
+   "bytes": 3177444,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir libxml2-2.15.4): listed in kit 7z header; DLL FileVersion 2.15.4 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "OpenSSL",
+   "version": "3.5.9",
+   "license": "Apache-2.0",
+   "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.9/openssl-3.5.9.tar.gz",
+   "bytes": 53279637,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir openssl-3.5.9): listed in kit 7z header; libcrypto-3-x64/libssl-3-x64 FileVersion 3.5.9 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "PoDoFo",
+   "version": "0.9.8",
+   "license": "LGPL-2.0-or-later (lib)",
+   "url": "https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz",
+   "bytes": 1012918,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir podofo-0.9.8): listed in kit 7z header; string 0.9.8 in podofo.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Poppler (+ Scribus kit patch poppler-24.05.0.patch)",
+   "version": "24.05.0",
+   "license": "GPL-2.0-or-later",
+   "url": "https://poppler.freedesktop.org/poppler-24.05.0.tar.xz",
+   "bytes": 1909164,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir poppler-24.05.0): listed in kit 7z header; static in importpdf.dll; Scribus.exe PE linker 14.29 = toolset v142 and only poppler-24.05.0 has lib/x64-v142 (21.12.0 only v140/v141) [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "poppler-data",
+   "version": "0.4.12",
+   "license": "BSD-3 / GPL-2.0 (mixed, see COPYING)",
+   "url": "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz",
+   "bytes": 4504754,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir poppler-data-0.4.12): listed in kit 7z header [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "zlib",
+   "version": "1.3.2",
+   "license": "Zlib",
+   "url": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.gz",
+   "bytes": 1502830,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir zlib-1.3.2): listed in kit 7z header; zlib1.dll FileVersion 1.3.2 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "CPython",
+   "version": "3.8.20",
+   "license": "PSF-2.0",
+   "url": "https://www.python.org/ftp/python/3.8.20/Python-3.8.20.tar.xz",
+   "bytes": 18962788,
+   "evidence": "scribus-1.6.x-libs-msvc-20261026.7z (dir python-3.8.20 (prebuilt python-x64)): listed in kit 7z header; python38.dll FileVersion 3.8.20 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "OpenSSL (CPython)",
+   "version": "1.1.1w",
+   "license": "OpenSSL",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/openssl-1.1.1w.tar.gz",
+   "bytes": 10071470,
+   "evidence": "CPython v3.8.20 get_externals.bat openssl-1.1.1w; python/dlls/libcrypto-1_1.dll FileVersion 1.1.1w [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libffi (CPython)",
+   "version": "3.3.0",
+   "license": "MIT",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/libffi-3.3.0.tar.gz",
+   "bytes": 508430,
+   "evidence": "CPython v3.8.20 get_externals.bat; python/dlls/libffi-7.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "SQLite (CPython)",
+   "version": "3.35.5.0",
+   "license": "Public domain",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/sqlite-3.35.5.0.tar.gz",
+   "bytes": 2457769,
+   "evidence": "CPython v3.8.20 get_externals.bat; sqlite3.dll FileVersion 3.35.5.0 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Tcl (CPython tkinter)",
+   "version": "8.6.9.0",
+   "license": "TCL",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/tcl-core-8.6.9.0.tar.gz",
+   "bytes": 10011171,
+   "evidence": "CPython v3.8.20 get_externals.bat; tcl86t.dll FileVersion 8.6.9 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Tk (CPython tkinter)",
+   "version": "8.6.9.0",
+   "license": "TCL",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/tk-8.6.9.0.tar.gz",
+   "bytes": 4343512,
+   "evidence": "CPython v3.8.20 get_externals.bat; tk86t.dll FileVersion 8.6.9 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Tix (CPython tkinter)",
+   "version": "8.4.3.6",
+   "license": "TCL-like (Tix)",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/tix-8.4.3.6.tar.gz",
+   "bytes": 1836451,
+   "evidence": "CPython v3.8.20 get_externals.bat; python/tcl/tix8.4.3/tix84.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "XZ (CPython _lzma)",
+   "version": "5.2.2",
+   "license": "Public domain",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/xz-5.2.2.tar.gz",
+   "bytes": 1466503,
+   "evidence": "CPython v3.8.20 get_externals.bat; static in _lzma.pyd [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "bzip2 (CPython _bz2)",
+   "version": "1.0.8",
+   "license": "bzip2-1.0.6",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/bzip2-1.0.8.tar.gz",
+   "bytes": 818771,
+   "evidence": "CPython v3.8.20 get_externals.bat; static in _bz2.pyd [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "zlib (CPython)",
+   "version": "1.3.1",
+   "license": "Zlib",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/zlib-1.3.1.tar.gz",
+   "bytes": 1570732,
+   "evidence": "CPython v3.8.20 get_externals.bat; static in python38.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "pip (bundled in python site-packages)",
+   "version": "23.0.1",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/p/pip/pip-23.0.1.tar.gz",
+   "bytes": 2082217,
+   "evidence": "pip-23.0.1.dist-info [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "setuptools (bundled)",
+   "version": "56.0.0",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-56.0.0.tar.gz",
+   "bytes": 2054762,
+   "evidence": "setuptools-56.0.0.dist-info [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Antiword",
+   "version": "0.37",
+   "license": "GPL-2.0-or-later",
+   "url": "https://deb.debian.org/debian/pool/main/a/antiword/antiword_0.37.orig.tar.gz",
+   "bytes": 318862,
+   "evidence": "libs/tools/antiword/antiword.exe string \"Version: 0.37\"; upstream site (winfield.demon.nl) defunct, Debian orig tarball is byte-identical upstream [url check: HEAD; magic bytes checked]"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "Scribus libs kit (sources + MSVC projects + patches + build-all-libs.bat) 20261026",
+   "url": "https://downloads.sourceforge.net/project/scribus/scribus-libs/scribus-1.6.x/scribus-1.6.x-libs-msvc-20261026.7z",
+   "bytes": 374909527
+  },
+  {
+   "name": "Scribus libs kit signature",
+   "url": "https://downloads.sourceforge.net/project/scribus/scribus-libs/scribus-1.6.x/scribus-1.6.x-libs-msvc-20261026.7z.asc",
+   "bytes": 169
+  },
+  {
+   "name": "Scribus 1.6.7 release commit aa658d92 (win32/msvc20xx projects)",
+   "url": "https://github.com/scribusproject/scribus/archive/aa658d92733de4be4267cd1fbc70e4824ae90322.tar.gz",
+   "bytes": 0
+  },
+  {
+   "name": "Scribus-build-props.props @aa658d92 (Qt 5.15.19, kit path)",
+   "url": "https://raw.githubusercontent.com/scribusproject/scribus/aa658d92733de4be4267cd1fbc70e4824ae90322/win32/msvc2022/Scribus-build-props.props",
+   "bytes": 2515
+  },
+  {
+   "name": "CPython v3.8.20 PCbuild/get_externals.bat",
+   "url": "https://raw.githubusercontent.com/python/cpython/v3.8.20/PCbuild/get_externals.bat",
+   "bytes": 4386
+  }
+ ],
+ "residualGaps": "(1) Exact dependency versions come from the Scribus libs kit scribus-1.6.x-libs-msvc-20261026.7z (date = 1.6.7 release commit aa658d92, 2026-10-26); its file list was read via HTTP range requests of the 7z header only (kit is 375 MB and was not downloaded). The kit itself contains full library sources + MSVC projects + Scribus patches (e.g. poppler-24.05.0.patch) and is the most exact corresponding source; upstream tarballs are listed per component. The kit's README/changelog/scribus-lib-paths.props sit at the end of a 230 MB solid LZMA2 block and could not be read without a full download. (2) Poppler: kit has 21.12.0 and 24.05.0; 24.05.0 chosen because Scribus.exe PE linker version is 14.29 (toolset v142) and only poppler-24.05.0 ships lib/x64-v142 - probable-to-exact. (3) Statically linked libs (lcms2, hunspell, poppler, librevenge & lib* importers, boost, pixman) have no version resource; versions come from the kit directory names. (4) Python 3.8.20 in the kit is a prebuilt binary (python-x64); CPython 3.8.20 had no official Windows binaries, so the Scribus maintainers built it - their build script is presumably in the kit (not inspected). External libs listed from CPython v3.8.20 get_externals.bat and confirmed by DLL versions (OpenSSL 1.1.1w, SQLite 3.35.5, Tcl/Tk 8.6.9). (5) Qt 5.15.19 assumed to be the unmodified open-source release (props file points to a generic F:\\Libraries\\Qt-5.15.19 install); Qt translations submodule source is probable. (6) Not listed: VC_redist.x64.exe 14.44 and MSVC runtime (Microsoft, no source), NSIS installer stub/plugins (zlib-licensed, no source obligation), setuptools/distlib launcher exes (from the listed pip/setuptools sdists). Bundled fonts (Lato2, URW 1.41, Vera), hunspell/hyphenation dictionaries and ICC profiles are part of the Scribus source tarball. (7) Scribus commit archive size unknown (>20 MB, dynamic)."
+}
